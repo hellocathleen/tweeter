@@ -1,4 +1,5 @@
 article.tweet {
+  opacity: 0.75;
   margin: 1em 2em 2em 2em;
   border: 1px solid black;
   border-radius: 5px;
@@ -6,11 +7,25 @@ article.tweet {
   background-color: white;
 }
 
+article.tweet:hover {
+  opacity: 1;
+}
+
+article.tweet footer .icons {
+  padding: 2px 5px 0 0;
+  float: right;
+  color: #26e2d9;
+  visibility: hidden;
+}
+
+article.tweet:hover footer .icons {
+  visibility: visible;
+}
+
 article.tweet header {
   background-color: #f2f4f7ee;
   width: 100%;
   height: 75px;
-
 }
 
 article.tweet h2 {
@@ -26,13 +41,18 @@ article.tweet span {
   padding: 20px 5px 0 0;
 }
 
-article.tweet footer {
-  border-top: 1px solid grey;
-  padding: 10px 0 10px 5px;
+article.tweet footer p {
   font-size: small;
+  display: inline-block;
+  margin: 0;
 }
 
-article.tweet p {
+article.tweet footer {
+  border-top: 1px solid grey;
+  padding: 5px 0 5px 5px;
+}
+
+article.tweet p.tweet-content {
   padding: 1em;
   font-size: large;
 }
