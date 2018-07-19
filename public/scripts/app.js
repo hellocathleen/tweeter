@@ -34,13 +34,18 @@ $(document).ready(function() {
     });
   }
 
+  $('.errors .null-errormsg').hide();
+  $('.errors .toolong-errormsg').hide();
+
   $('form').on('submit', function(event) {
   event.preventDefault();
+  $('.errors .null-errormsg').slideUp("fast");
+  $('.errors .toolong-errormsg').slideUp("fast");
   let input = $(".new-tweet textarea");
     if (!input.val()) {
-      alert("You must enter a tweet.");
+      $('.errors .null-errormsg').slideDown("fast");
     } else if (input.val().length > 140) {
-      alert("Your tweet is too long.");
+      $('.errors .toolong-errormsg').slideDown("fast");
     } else {
       console.log('Button clicked, performing ajax call...');
       $.ajax('/tweets', 
@@ -48,7 +53,7 @@ $(document).ready(function() {
         data: $(this).serialize(), 
         success: loadTweets })
     }
-    input.val().empty();
+    //input.val().empty();
   })
 
   $(".new-tweet").hide();
