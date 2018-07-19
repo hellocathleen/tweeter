@@ -33,10 +33,14 @@ $(document).ready(function() {
       renderTweets(input);
     });
   }
-
+  //hide the compose tweet textbox upon page loading
+  $(".new-tweet").hide();
+  
+  //hide error messages until triggered
   $('.errors .null-errormsg').hide();
   $('.errors .toolong-errormsg').hide();
 
+  //submit a tweet if number of characters is between 1-140; otherwise show error
   $('form').on('submit', function(event) {
   event.preventDefault();
   $('.errors .null-errormsg').slideUp("fast");
@@ -52,12 +56,11 @@ $(document).ready(function() {
       { method: 'POST', 
         data: $(this).serialize(), 
         success: loadTweets })
-        input.val("");
+      input.val("");
     }
   })
 
-  $(".new-tweet").hide();
-
+  //show and hide tweet textbox when Compose button is clicked
   $("#nav-bar .compose").on("click", (function() {
     $(".new-tweet").slideToggle("slow", function() {
       $(".new-tweet textarea").select();
