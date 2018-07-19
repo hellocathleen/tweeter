@@ -52,8 +52,8 @@ $(document).ready(function() {
       { method: 'POST', 
         data: $(this).serialize(), 
         success: loadTweets })
+        input.val("");
     }
-    //input.val().empty();
   })
 
   $(".new-tweet").hide();
@@ -63,6 +63,4 @@ $(document).ready(function() {
       $(".new-tweet textarea").select();
     });
   }));
-
-
 });
