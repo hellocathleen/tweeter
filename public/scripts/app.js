@@ -51,7 +51,6 @@ $(document).ready(function() {
     } else if (input.val().length > 140) {
       $('.errors .toolong-errormsg').slideDown("fast");
     } else {
-      console.log('Button clicked, performing ajax call...');
       $.ajax('/tweets', 
       { method: 'POST', 
         data: $(this).serialize(), 
