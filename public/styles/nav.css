@@ -6,6 +6,7 @@
   color: #e8fdff;
   padding-left: 2em;
   padding-right: 2em;
+  z-index: 1;
 }
 
 #nav-bar .logo {
@@ -19,4 +20,21 @@
   font-size: 200%;
   padding-left: 10px;
   line-height: 2.5;
+}
+
+#nav-bar button {
+  float: right;
+  line-height: 3;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 12px 0 0 0;
+  padding: 0 10px 0 10px;
+  color: #00a087;
+  font-size: large;
+  background-color: #dbfcf4;
+}
+
+#nav-bar button:hover {
+  color: black;
+  background-color: white;
 }
