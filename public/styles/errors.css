@@ -1,0 +1,9 @@
+.null-errormsg {
+  color: red;
+  font-style: italic;
+}
+
+.toolong-errormsg {
+  color: red;
+  font-style: italic;
+}
