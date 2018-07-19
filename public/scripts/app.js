@@ -29,7 +29,6 @@ $(document).ready(function() {
   function loadTweets() {
     $.ajax('/tweets', { method: 'GET' })
       .done(function (input) {
-      console.log("success");
       renderTweets(input);
     });
   }
