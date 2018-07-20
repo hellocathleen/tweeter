@@ -22,11 +22,11 @@ This repository is the starter code for the project: Students will fork and clon
 - Compose a tweet
 
 
-!["Tweets"](https://github.com/hellocathleen/tweeter/blob/master/docs/Tweets.png?raw=true)
+!["Tweets"](https://github.com/hellocathleen/tweeter/blob/master/docs/Tweets%20after%20submission.png?raw=true)
 - Tweets after submission
 
 
-!["Hovering over a tweet"](https://github.com/hellocathleen/tweeter/blob/master/docs/Tweet-hover.png?raw=true)
+!["Hovering over a tweet"](https://github.com/hellocathleen/tweeter/blob/master/docs/Hover-tweet2.png?raw=true) 
 - Hovering over a tweet
 
 
