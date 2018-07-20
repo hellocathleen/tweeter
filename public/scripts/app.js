@@ -3,18 +3,32 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
+
 $(document).ready(function() {
 
   function createTweetElement(tweetData){
+    //calculate number of elapsed days since tweet creation
+    let daysAgo = function () {
+      let date1 = Date.now();
+      let date2 = tweetData.created_at;
+      let ms = date1 - date2;
+      let days = Math.round(ms/(1000*60*60*24));
+      if (days !== 1) {
+        return days + " days ago";
+      } else {
+        return days + " day ago";
+      }
+    }
+    //create tweet HTML element
     let $tweet = $("<article>").addClass("tweet");
     let $header = $("<header>").appendTo($tweet);
-    let $avatar = $("<img>").attr("src", tweetData.user.avatars.small).appendTo($header);
-    let $name = $("<h2>").text(tweetData.user.name).appendTo($header);
-    let $handle = $("<span>").addClass("handle").text(tweetData.user.handle).appendTo($header);
-    let $tweetcontent = $("<p>").addClass("tweet-content").text(tweetData.content.text).appendTo($tweet);
+      $("<img>").attr("src", tweetData.user.avatars.small).appendTo($header);
+      $("<h2>").text(tweetData.user.name).appendTo($header);
+      $("<span>").addClass("handle").text(tweetData.user.handle).appendTo($header);
+      $("<p>").addClass("tweet-content").text(tweetData.content.text).appendTo($tweet);
     let $footer = $("<footer>").appendTo($tweet);
-    let $date = $("<p>").addClass("date").text(tweetData.created_at).appendTo($footer);
-    let $icons = $("<div>").addClass("icons").html("<i class='fas fa-heart'></i> <i class='fas fa-retweet'></i> <i class='fas fa-flag'></i>").appendTo($footer);
+      $("<p>").addClass("date").text(daysAgo).appendTo($footer);
+      $("<div>").addClass("icons").html("<i class='fas fa-heart'></i> <i class='fas fa-retweet'></i> <i class='fas fa-flag'></i>").appendTo($footer);
 
     return $tweet;
   }
@@ -55,6 +69,7 @@ $(document).ready(function() {
         data: $(this).serialize(), 
         success: loadTweets })
       input.val("");
+      $(".counter").text(140);
     }
   })
 
