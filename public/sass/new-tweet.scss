@@ -1,0 +1,43 @@
+$red: #cc0000;
+
+.new-tweet {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: 2em;
+  margin-right: 2em;
+  border: 1px solid black;
+  border-radius: 5px;
+  border-color: #d7dbe2;
+  background-color: #eee;
+  h2 {
+    text-align: left;
+    border-bottom: 1px solid gray;
+  }
+  textarea {
+    padding-left: 5px;
+    padding-top: 5px;
+    float: left;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  input {
+    margin-bottom: 10px;
+  }
+  span.counter {
+    float: right;
+    font-style: italic;
+    padding-top: 5px;
+  }
+  .invalid {
+    color: $red;
+  }
+  .null-errormsg {
+    color: $red;
+    font-style: italic;
+  }
+  .toolong-errormsg {
+    color: $red;
+    font-style: italic;
+  }
+}
+

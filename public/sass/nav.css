@@ -1,0 +1,38 @@
+#nav-bar {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color: #00a087;
+  color: #e8fdff;
+  padding-left: 2em;
+  padding-right: 2em;
+  z-index: 1;
+}
+#nav-bar .logo {
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+#nav-bar .header {
+  float: left;
+  font-size: 200%;
+  padding-left: 10px;
+  line-height: 2.5;
+}
+#nav-bar button {
+  float: right;
+  line-height: 3;
+  border: #006d5c;
+  border-radius: 5px;
+  margin: 12px 0 0 0;
+  padding: 0 10px 0 10px;
+  color: #008771;
+  font-size: large;
+  background-color: #d3fff8;
+}
+#nav-bar button:hover {
+  color: black;
+  background-color: white;
+}
+
+/*# sourceMappingURL=nav.css.map */

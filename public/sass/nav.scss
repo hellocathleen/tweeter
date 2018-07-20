@@ -1,0 +1,39 @@
+$green: #00a087;
+
+#nav-bar {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color: $green;
+  color: #e8fdff;
+  padding-left: 2em;
+  padding-right: 2em;
+  z-index: 1;
+
+  .logo {
+    width: 80px;
+    height: 80px;
+    float: left;
+  }
+  .header {
+    float: left;
+    font-size: 200%;
+    padding-left: 10px;
+    line-height: 2.5;
+  }
+  button {
+    float: right;
+    line-height: 3;
+    border: darken($green, 10%);
+    border-radius: 5px;
+    margin: 12px 0 0 0;
+    padding: 0 10px 0 10px;
+    color: darken($green, 5%);
+    font-size: large;
+    background-color: lighten($green, 60%);
+  }
+  button:hover {
+    color: black;
+    background-color: white;
+  }
+}

@@ -1,0 +1,57 @@
+$border: #d0d3da;
+
+article.tweet {
+  opacity: 0.75;
+  margin: 1em 2em 2em 2em;
+  border: 1px solid black;
+  border-radius: 5px;
+  border-color: $border;
+  background-color: white;
+  footer .icons {
+    padding: 2px 5px 0 0;
+    float: right;
+    color: #26e2d9;
+    visibility: hidden;
+  }
+  header {
+    background-color: lighten($border, 5%);
+    width: 100%;
+    height: 70px;
+    img {
+      padding: 10px 0 0 10px;
+      float: left;
+    }
+  }
+  h2 {
+    padding: 20px 0 0 10px;
+    color: #79797a;
+    margin: 0;
+    float: left;
+  }
+  span {
+    float: right;
+    color: gray;
+    padding: 25px 5px 0 0;
+  }
+  footer {
+    border-top: 1px solid grey;
+    padding: 7px 0 7px 5px;
+    p {
+      font-size: small;
+      display: inline-block;
+      margin: 0;
+    }
+  }
+  p.tweet-content {
+    padding: 1em;
+    font-size: large;
+  }
+}
+
+article.tweet:hover {
+  opacity: 1;
+}
+
+article.tweet:hover footer .icons {
+  visibility: visible;
+}
