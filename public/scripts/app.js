@@ -13,10 +13,12 @@ $(document).ready(function() {
       let date2 = tweetData.created_at;
       let ms = date1 - date2;
       let days = Math.round(ms/(1000*60*60*24));
-      if (days !== 1) {
-        return days + " days ago";
-      } else {
+      if (days === 0) {
+        return "Today";
+      } else if (days === 1) {
         return days + " day ago";
+      } else {
+        return days + " days ago";
       }
     }
     //create tweet HTML element
