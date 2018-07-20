@@ -19,11 +19,7 @@ This repository is the starter code for the project: Students will fork and clon
 ## Screenshots
 
 !["Compose a tweet"](https://github.com/hellocathleen/tweeter/blob/master/docs/Compose.png?raw=true)
-
 !["Tweets"](https://github.com/hellocathleen/tweeter/blob/master/docs/Tweets.png?raw=true)
-
 !["Hovering over a tweet"](https://github.com/hellocathleen/tweeter/blob/master/docs/Tweet-hover.png?raw=true)
-
 !["Error message generated if there is no input"](https://github.com/hellocathleen/tweeter/blob/master/docs/Error1.png?raw=true)
-
 !["Error message generated for too many characters"](https://github.com/hellocathleen/tweeter/blob/master/docs/Error2.png?raw=true)
