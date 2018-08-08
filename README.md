@@ -18,7 +18,7 @@ Front-end built with HTML, CSS, JS, jQuery and AJAX, and back-end built with Nod
 
 ## Screenshots
 
-!["Compose a tweet"](https://github.com/hellocathleen/tweeter/blob/master/docs/Compose.png?raw=true)
+!["Compose a tweet"](https://github.com/hellocathleen/tweeter/blob/master/docs/Home.png?raw=true)
 - Compose a tweet
 
 
